@@ -80,7 +80,7 @@ var layout = [
 ];
 
 //more variables
-var currentLevel = 5;
+var currentLevel = 1;
 var levelStatus = "GAME START";
 var enemyX = [];
 var enemyY = [];
@@ -961,6 +961,7 @@ function draw() {
     text("Press any button to start!", 540, 800);
   }
   if(levelStatus == "GAME WON"){
+    level5.stop();
     image(startScreen,0,0);
     textSize(100);
     text("YOU WON!", 600, 700);
